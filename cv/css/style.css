@@ -1,0 +1,270 @@
+html,body,header,h1,h2,figure,img, content,aside,main,ul,li,a
+{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	list-style:none inside;
+	text-decoration:none;
+	border:none;
+	word-wrap: break-word;
+}
+}
+content,aside,main,header,section,figure
+{
+	display:block;
+}
+body
+{
+	background:#fff url('../img/patt2.png');
+	height: 100%;
+}
+.wrap
+{
+	width:70%;
+	margin:0 auto;	
+	height: 100%;
+}
+/*********************Header****************************/
+header
+{   
+    position:relative;
+	background-color: #3d6f7c;
+	width: 100%;
+	margin: 20px auto;
+	border-radius:5px;
+	padding:5px 60px;
+	
+	
+}
+
+header figure
+{
+	float:right;
+	
+}
+header figure img
+{
+	vertical-align:middle;
+}
+
+
+.clearfix
+{
+	content: "";
+    display: table;
+    clear: both;
+}
+/*********************Content****************************/
+.name
+{
+	float:left;
+}
+h1
+{    
+	font: 2.25em/1.75em Tahoma,sans-serif;
+	color: rgb(255,255,255);
+	display:block;
+	width:200px;
+}
+h2
+{   
+    display:block;
+	font: 1em/1.25em Tahoma,sans-serif;
+	color:rgb(161,176,180);
+    border-top: 2px solid #A1B0B4;
+	margin:15px 0;
+	padding-top:15px;
+	
+}
+.lang_button
+{
+	position:absolute;
+	right:0;
+	margin-right:20px;
+}
+.lang_button a
+{
+	color:#FFFFFF;
+}
+.lang_button a:hover
+{
+	color:#A1B0B4;
+}
+ content 
+ {
+	background-color: rgb(255,255,255);
+	margin: 0 auto;
+	padding:5px 50px;
+	border:1px solid #3D6F7C;
+	border-radius:5px;
+	width: 100%;
+ }
+ 
+ content h3
+{
+	font:bold 1em/1.25em Arial,sans-serif;
+	color:rgb(61,111,124);
+	margin:30px 0;
+}
+content p,
+content li
+{   
+    font:bold 0.875em Roboto,sans-serif;
+	line-height:1.5;
+}
+
+content li
+{
+	margin:10px 0;
+	
+}
+
+.box-info
+{
+	height:500px;
+	
+}
+.big-box
+{
+	height:670px;
+	
+}
+.box-info:nth-child(2n+2)
+{
+	margin-bottom:0;
+	margin-bottom:115px;
+}
+.box-info img
+ {
+	width: 35px;
+	height: 35px;
+ }
+ /*********************Aside****************************/
+aside
+{
+	float:left;
+	width: 40%;
+	border-right: 8px solid #3D6F7C;
+}
+
+aside .box-info li
+{
+	width: 100%;
+}
+
+aside .box-info a
+{
+    display:block;
+	background:url(../img/social.png) no-repeat;	
+    padding:15px 0;
+    width:35px;
+    height:35px;
+}
+aside .box-info a p
+{  
+   
+   margin:0 50px;
+   width: 156px;
+   color: #000000;
+}
+aside .box-info a p:hover
+{  
+  color:#3D6F7C;
+  margin-top:1px;
+}
+aside .box-info .social-facebook:hover
+{
+    background-position: -35px 0;
+}
+aside .box-info .social-skype
+{
+    background-position:  0 -35px;
+}
+aside .box-info .social-skype:hover
+{
+    background-position: -35px -35px;
+}
+aside .box-info .social-linked
+{
+    background-position:  0 -70px;
+}
+aside .box-info .social-linked:hover
+{
+    background-position: -35px -70px;
+}
+aside .box-info .social-git
+{
+    background-position:  0 -105px;
+}
+aside .box-info .social-git:hover
+{
+    background-position: -35px -105px;
+}
+/*********************Main****************************/
+main
+{
+	margin-left:50px;
+	float:left;
+	width: 47%;
+}
+main .box-info li::before
+{
+    content: '-';
+    margin-right: 0.5em;
+}
+/*****************Personal qualities************************/
+section
+{
+	text-align:justify;
+	float:left
+}
+.personal h3:hover::after
+{
+content:' Хочу любимую работу!:)';
+}
+.personal_en h3:hover::after
+{
+content:' I want to love my job!:)';
+}
+
+@font-face {
+    font-family: Roboto; 
+    src: url('../fonts/Roboto.ttf'); 
+    
+   }
+/*****************max-width:767px************************/
+
+@media only screen and (max-width:767px)
+{
+	
+	header
+	{
+		font-size:80%;
+	}
+	content
+	{
+		min-width:320px;
+	}
+	aside,main
+	{
+		float:none;
+		border:none;
+		width: 100%;
+		margin:0;
+	}
+	.box-info
+	{
+		width: 100%;
+		height: auto;
+	
+	}
+	.box-info:nth-child(2n+2)
+	{
+		margin-bottom: 0;
+	}
+}
+@media only screen and (max-width:500px) {
+	.wrap {
+		width:100%;
+	}
+}
