@@ -899,6 +899,14 @@ angular.module('rich', [])
             return arr;
         }
     });
+
+  $(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+      $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });
+
 $(document).ready(function () {
  var h = $('#one').height();
   $('#scroll').click(function () {

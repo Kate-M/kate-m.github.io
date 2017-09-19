@@ -1153,7 +1153,7 @@ header .bottom_header_nav .text_wrap ul li:last-child a:hover {
           transform: scale(1);
 }
 .studios #sliders .slick-prev:before {
-  content: "NAZAD";
+  content: "НАЗАД";
   color: #333333;
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
@@ -1170,7 +1170,7 @@ header .bottom_header_nav .text_wrap ul li:last-child a:hover {
   margin-top: -65px;
 }
 .studios #sliders .slick-next:before {
-  content: "VPERED";
+  content: "ВПЕРЕД";
   color: #333333;
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
@@ -1712,7 +1712,7 @@ section .schedule .time_list .area tr td .blank:hover::before {
   left: 0;
 }
 section .schedule .time_list .area tr td .blank:hover:after {
-  content: 'Zapisatsia';
+  content: 'Записаться';
   display: block;
   -webkit-border-radius: 20px;
           border-radius: 20px;
