@@ -1,0 +1,224 @@
+<!doctype html>
+<html ng-app="rich">
+
+<head>
+	<meta charset="utf-8">
+	<title>Батут</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-controller="richCtrl">
+	<section id="one">
+		<div class="block_1">
+			<div class="logo">
+				<a href="#"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="tagline">
+				<h1><span>Батут –</span> головокружение
+ радостного полета</h1>
+			</div>
+			<div class="bottom">
+				<img id="scroll" src="images/arr_b.png" alt="">
+			</div>
+		</div>
+
+	</section>
+
+	<section>
+		<div class="block_2 clearfix">
+			<div class="item1">
+				<figure>
+					<img src="images/back_two.png" alt="">
+				</figure>
+			</div>
+			<div class="item2">
+				<figure>
+					<img src="images/shape.png" alt="">
+					<figcaption>
+						<h2>Батут — это отличное развлечение,</h2>
+						<p>которое принесет море положительных эмоций и поможет поддержать отличную физическую форму.</p>
+						<p>Ведь прыжки на батуте – не только смешные и забавные трюки, но и один из олимпийских видов спорта.</p>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="block_3 clearfix">
+
+			<div class="item1">
+				<div class="model" ng-class="isSelectedCss(product)" ng-repeat="product in products | bySize: selectedSize" ng-click="selectProduct(product)">
+					<figure>
+						<img ng-src="{{product.img}}" alt=''>
+						<figcaption>{{product.description}} <span><b>{{product.warranty}}</b> месяцев гарантиии</span></figcaption>
+					</figure>
+
+					<p>{{product.model}}</p>
+				</div>
+
+			</div>
+			<div class="item2">
+				<h2>Выберите диаметр батута</h2>
+
+				<ul class="point clearfix">
+					<li ng-repeat="product in products | distinctSize" ng-click="selectSize(product)" ng-class="isSelectedSizeCss(product)">
+						<a href=""></a>
+					</li>
+				</ul>
+				<ul class="value clearfix">
+					<li ng-repeat="product in products | distinctSize" ng-click="selectSize(product)" ng-class="isSelectedSizeCss(product)"><span>{{product.size_cm}}</span> см</li>
+				</ul>
+				<ul class="value_ft clearfix">
+					<li ng-repeat="product in products | distinctSize" ng-click="selectSize(product.size_ft)" ng-class="isSelectedSizeCss(product)"><span>{{product.size_ft}}</span> ft</li>
+				</ul>
+				<div class="main clearfix">
+					<div class="info">
+						<h3>{{selectedProduct.model_title}}</h3>
+						<p><span>{{selectedProduct.model}}</span> {{selectedProduct.size_cm}} см - {{selectedProduct.size_ft}} ft</p>
+						<div class="hit">
+							<figure ng-show="selectedProduct.isHot">
+								<img src="images/fire.png" alt="">
+								<figcaption>Хит продаж</figcaption>
+							</figure>
+						</div>
+						<ul class="descr_list">
+							<li ng-repeat="x in selectedProduct.info">{{ x }}</li>
+
+						</ul>
+						<div class="bye clearfix">
+							<div class="price">
+								<p>{{print_byr(selectedProduct.price)}}</p>
+								<p>{{print_byn(selectedProduct.price)}}</p>
+							</div>
+							<button class="clearfix">
+                                    <p>Купить</p>
+                                    <div class="go">
+                                        <img src="images/bye.png" alt="">
+                                    </div>
+                                </button>
+						</div>
+					</div>
+					<div class="pic">
+						<figure>
+							<span class='zoom' id='ex1'>
+		                        <img src="{{selectedProduct.img_big}}"  alt=''>
+                            </span>
+							<img src="images/zoom.png" alt=''>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block_3mob clearfix">
+
+			<div class="item1 clearfix">
+				<div class="model" ng-class="isSelectedCss(product)" ng-repeat="product in products | bySize: selectedSize" ng-click="selectProduct(product)">
+					<figure>
+						<img ng-src="{{product.img}}" alt=''>
+
+					</figure>
+					<p>{{product.model}}</p>
+				</div>
+
+			</div>
+			<div class="item2">
+
+
+				<ul class="point">
+					<li>
+						<h2>Диаметр батута</h2>
+						<ul class="value">
+							<li ng-repeat="product in products | distinctSize" ng-click="selectSize(product)" ng-class="isSelectedSizeCss(product)"><span>{{product.size_cm}} см - {{product.size_ft}} ft</span></li>
+
+						</ul>
+					</li>
+				</ul>
+				<div class="main clearfix">
+					<div class="info">
+						<h3>{{selectedProduct.model_title}}</h3>
+						<p><span>{{selectedProduct.model}}</span> {{selectedProduct.size_cm}} см - {{selectedProduct.size_ft}} ft</p>
+						<div class="hit">
+							<figure ng-show="selectedProduct.isHot">
+								<img src="images/fire.png" alt="">
+								<figcaption>Хит продаж</figcaption>
+							</figure>
+						</div>
+
+					</div>
+					<div class="pic">
+						<figure>
+							<span class='zoom' id='ex1'>
+		                        <img src="{{selectedProduct.img_big}}"  alt=''>
+                            </span>
+						</figure>
+					</div>
+					<ul class="descr_list">
+						<li ng-repeat="x in selectedProduct.info">{{ x }}</li>
+
+					</ul>
+					<div class="bye clearfix">
+						<div class="price">
+							<p>{{print_byr(selectedProduct.price)}}</p>
+							<p>{{print_byn(selectedProduct.price)}}</p>
+						</div>
+						<button class="clearfix">
+                                    <p>В корзину</p>
+                                    <div class="go">
+                                        <img src="images/cart.png" alt="">
+                                    </div>
+                                </button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="block_4">
+
+		</div>
+
+	</section>
+	<footer>
+		<div class="catalog">
+			<p>
+				<a href="#" target="_blank">Посмотреть эти батуты в каталоге</a>
+			</p>
+		</div>
+		<div class="tel clearfix">
+			<div class="nomber">
+				<a href="tel:+375 (44) 111-22-33" >
+					<img src="images/vel.png" alt="">
+					<p>+375 (44) 111-22-33</p>
+				</a>
+			</div>
+			<div class="nomber">
+				<a href="tel:+375 (33) 111-22-33" >
+					<img src="images/mts.png" alt="">
+					<p>+375 (33) 111-22-33</p>
+				</a>
+			</div>
+			<div class="nomber">
+				<a href="tel:+375 (17) 111-22-33" >
+					<img src="images/tel.png" alt="">
+					<p>+375 (17) 111-22-33</p>
+				</a>
+			</div>
+		</div>
+	</footer>
+	<script src="js/scripts.min.js"></script>
+	<script>            
+            $(document).ready(function(){
+                $('#ex1').zoom();			
+            });
+	    </script>
+</body>
+
+</html>
