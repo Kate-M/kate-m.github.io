@@ -1,0 +1,684 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>LookShop</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="application-name" content="LookShop">
+	<meta name="msapplication-TileImage" content="images/favicon.png">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+			<header>
+				<div class="header-top">
+					<div class="container container-fluid">
+						<div class="header-top-wrap">
+							<div class="header-contact">
+								<p>custom care:<a href="tel:+888-23-4567"> 888-23-4567</a></p>
+							</div>
+							<div class="header-account">
+								<ul class="account-list-items">
+									<li><a class="drop-down" href="">&#036; us</a></li>
+									<li>
+										<a class="user-info" href=""><span class="user-img icon-user"></span><span>My account</span></a>
+									</li>
+									<li>
+										<a href=""><span class="search-img icon-search"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-main">
+					<div class="container">
+						<div class="header-main-wrap">
+							<div class="logo-box">
+								<h1>
+									<a href="index.html"><img src="images/logo.png" alt=""></a>
+								</h1>
+							</div>
+							<div class="header-navigation tablet-nav">
+								<nav>
+									<button class="tablet-nav-btn">
+										<span>Menu</span>
+										<span class="mob-nav-ico icon-menu"></span>
+									</button>
+									<ul class="header-navigation-items tablet-menu">
+										<li><a class="drop-down" href="">New</a></li>
+										<li><a class="drop-down" href="">Desingners</a></li>
+										<li><a class="drop-down" href="">Women</a></li>
+										<li><a class="drop-down" href="">Men</a></li>
+										<li><a class="drop-down" href="">Clearence</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="cart-area">
+								<form id='cart-form' action="cart-bye">
+									<div class="cart-item cart-select drop-down">
+										<select class="">
+											<option value="">
+												You cart
+											</option>
+										</select>
+									</div>
+									<div class="cart-item">
+										<span class="cart-icon icon-bye"></span>
+										<div class="cart-info">
+											<span>0 items</span> &#124; <span>&#036; 0</span>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="main-slider">
+				<div class="slider-item">
+					<div class="slide slide-1">
+						<button class="btn btn-orange btn-lg drop-right">Shop now</button>
+					</div>
+					<button class="main-slider-btn prev-slide-btn"><span class="icon-prev-arrow"></span></button>
+					<button class="main-slider-btn next-slide-btn"><span class="icon-next-arrow"></span></button>
+				</div>
+				<ul class="slider-dots">
+					<li><button></button></li>
+					<li class="active-btn"><button></button></li>
+					<li><button></button></li>
+					<li><button></button></li>
+					<li><button></button></li>
+				</ul>
+			</section>
+			<section class="contact-bar">
+				<div class="container">
+					<div class="contact-bar-wrap">
+						<div class="subscribe">
+							<form action="subscribton" id="subscribe" class="subscribe-form">
+								<label class="contact-label" for="subsc">Stay updated</label>
+								<input class="subsc-field" id="subsc" type="email" placeholder="Your email address">
+								<button class="btn btn-orange btn-xs btn-submit"><span class="icon-plus"></span></button>
+							</form>
+						</div>
+						<div class="social-links">
+							<p class="contact-label">Find us here</p>
+							<ul class="social-list">
+								<li>
+									<a class="social-ico" href=""><span class="icon-facebook"></span></a>
+								</li>
+								<li>
+									<a class="social-ico" href=""><span class="icon-twitter-new"></span></a>
+								</li>
+								<li>
+									<a class="social-ico" href=""><span class="icon-pinterest"></span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="collections">
+				<div class="container collection-wrap">
+					<div class="collection-thumb">
+						<a href="" class="collection-thumb thumb-space-r img-wrap col-shrink">
+							<img src="images/collection-1.jpg" alt="">
+						</a>
+						<div class="collection-thumb collection-thumb-vertical col-shrink">
+							<a href="" class="collection-thumb thumb-space-b img-wrap">
+								<img src="images/collection-2.jpg" alt="">
+							</a>
+							<div class="collection-thumb">
+								<a href="" class="collection-thumb thumb-space-r img-wrap col-shrink">
+									<img src="images/collection-3.jpg" alt="">
+								</a>
+								<a href="" class="collection-thumb img-wrap col-shrink">
+									<img src="images/collection-4.jpg" alt="">
+									<button class="btn btn-sm btn-collection drop-right">Shop now</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="product">
+				<div class="product-controls">
+					<div class="container container-fluid">
+						<div class="product-nav mob-nav">
+							<button class="mob-nav-btn">
+								<span>What&#096;s hot?</span>
+								<span class="mob-nav-ico icon-down-arrow"></span>
+							</button>
+							<ul class="product-type-nav mob-menu">
+								<li class="active"><a href="">What&#096;s hot?</a></li>
+								<li><a href="">Designers</a></li>
+								<li><a href="">Featured</a></li>
+								<li><a href="">Latest</a></li>
+							</ul>
+							<div class="product-slider-nav">
+								<button class="product-slider-btn prev-product-btn"><span class="btn-ico icon-col-prev"></span></button>
+								<button class="product-slider-btn next-product-btn available-directon"><span class="btn-ico icon-col-next"></span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog">
+					<ul class="product-list">
+						<li>
+							<a class="product-item" href="">
+								<figure class="product-item-preview">
+									<div class="img-wrap">
+										<img src="images/models/model-1-mob.jpg" alt="">
+									</div>
+									<figcaption class="product-description">
+										<p class="name">Feel tank</p>
+										<p class="price">&#036;59.95</p>
+										<button class="btn btn-orange btn-md btn-product-cart">
+									<span>Add to cart</span>
+									<span class="btn-add-ico icon-plus"></span>
+								</button>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a class="product-item" href="">
+								<figure class="product-item-preview">
+									<div class="img-wrap">
+										<img src="images/models/model-2-mob.jpg" alt="">
+									</div>
+									<figcaption class="product-description">
+										<p class="name">Mimosa Lace dress</p>
+										<p class="price">&#036;76.95</p>
+										<button class="btn btn-orange btn-md btn-product-cart">
+										<span>Add to cart</span>
+										<span class="btn-add-ico icon-plus"></span>
+									</button>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li class="mob-hidden">
+							<a class="product-item" href="">
+								<figure class="product-item-preview">
+									<div class="img-wrap">
+										<img src="images/models/model-3.jpg" alt="">
+									</div>
+									<figcaption class="product-description">
+										<p class="name">Feel tank</p>
+										<p class="price">&#036;59.95</p>
+										<button class="btn btn-orange btn-md btn-product-cart">
+										<span>Add to cart</span>
+										<span class="btn-add-ico icon-plus"></span>
+									</button>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li class="mob-hidden">
+							<a class="product-item" href="">
+								<figure class="product-item-preview">
+									<div class="img-wrap">
+										<img src="images/models/model-4.jpg" alt="">
+									</div>
+									<figcaption class="product-description">
+										<p class="name">Feel tank</p>
+										<p class="price">&#036;59.95</p>
+										<button class="btn btn-orange btn-md btn-product-cart">
+										<span>Add to cart</span>
+										<span class="btn-add-ico icon-plus"></span>
+									</button>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li class="mob-hidden">
+							<a class="product-item" href="">
+								<figure class="product-item-preview">
+									<div class="img-wrap">
+										<img src="images/models/model-5.jpg" alt="">
+									</div>
+									<figcaption class="product-description">
+										<p class="name">Petrol sweater</p>
+										<p class="price">&#036;21.50</p>
+										<button class="btn btn-orange btn-md btn-product-cart">
+										<span>Add to cart</span>
+										<span class="btn-add-ico icon-plus"></span>
+									</button>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li class="mob-hidden">
+							<a class="product-item" href="">
+								<figure class="product-item-preview sale-mark">
+									<div class="img-wrap">
+										<img src="images/models/model-6.jpg" alt="">
+									</div>
+									<figcaption class="product-description">
+										<p class="name">Feel tank</p>
+										<p class="price">&#036;59.95</p>
+										<button class="btn btn-orange btn-md btn-product-cart">
+										<span>Add to cart</span>
+										<span class="btn-add-ico icon-plus"></span>
+									</button>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li class="mob-hidden">
+							<a class="product-item" href="">
+								<figure class="product-item-preview sale-mark">
+									<div class="img-wrap">
+										<img src="images/models/model-7.jpg" alt="">
+									</div>
+									<figcaption class="product-description">
+										<p class="name">Feel tank</p>
+										<p class="price">&#036;59.95</p>
+										<button class="btn btn-orange btn-md btn-product-cart">
+										<span>Add to cart</span>
+										<span class="btn-add-ico icon-plus"></span>
+									</button>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li class="mob-hidden">
+							<a class="product-item" href="">
+								<figure class="product-item-preview">
+									<div class="img-wrap">
+										<img src="images/models/model-8.jpg" alt="">
+									</div>
+									<figcaption class="product-description">
+										<p class="name">Feel tank</p>
+										<p class="price">&#036;59.95</p>
+										<button class="btn btn-orange btn-md btn-product-cart">
+										<span>Add to cart</span>
+										<span class="btn-add-ico icon-plus"></span>
+									</button>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+					</ul>
+					<div class="button-box">
+						<button class="btn btn-more btn-md">
+							<span>Load More</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="sale">
+				<div class="container">
+					<div class="title">
+						<div class="polygon-mark">
+							<div class="lr">
+								<div class="burst"></div>
+							</div>
+							<div class="lr">
+								<div class="burst"></div>
+							</div>
+							<div class="lr lr2">
+								<div class="burst burst2"></div>
+							</div>
+							<div class="lr lr2">
+								<div class="burst burst2"></div>
+							</div>
+							<div class="lr lr3">
+								<div class="burst burst3"></div>
+							</div>
+							<div class="lr lr3">
+								<div class="burst burst3"></div>
+							</div>
+						</div>
+						<div class="clearence-text">
+							<div class="clr-info">
+								<p>Clearence</p>
+							</div>
+							<div class="clr-info">
+								<div class="clr-value discont">
+									<p>50</p>
+								</div>
+								<div class="clr-value">
+									<div class="clr-value">
+										<p>&#037;</p>
+									</div>
+									<div class="clr-value">
+										<p>off</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container container-fluid">
+					<ul class="sub-catalog product-list">
+						<li class="desc-hidden">
+							<a class="product-item" href="">
+								<figure class="product-item-preview">
+									<div class="img-wrap">
+										<img src="images/models/model-01.jpg" alt="">
+									</div>
+									<figcaption class="product-description">
+										<p class="name">Atmos&#038;Here Shopper</p>
+										<p class="price">&#036;49.95</p>
+										<button class="btn btn-orange btn-md btn-product-cart">
+									<span>Add to cart</span>
+									<span class="btn-add-ico icon-plus"></span>
+								</button>
+									</figcaption>
+								</figure>
+							</a>
+
+						</li>
+						<li class="desc-hidden">
+							<a class="product-item" href="">
+								<figure class="product-item-preview">
+									<div class="img-wrap">
+										<img src="images/models/model-02.jpg" alt="">
+									</div>
+									<figcaption class="product-description">
+										<p class="name">WishVitalise Dress copy</p>
+										<p class="price">&#036;96.95</p>
+										<button class="btn btn-orange btn-md btn-product-cart">
+									<span>Add to cart</span>
+									<span class="btn-add-ico icon-plus"></span>
+								</button>
+									</figcaption>
+								</figure>
+							</a>
+
+						</li>
+						<li class="mob-hidden">
+							<a class="product-item" href="">
+								<figure class="product-item-preview">
+									<div class="img-wrap">
+										<img src="images/models/model-7.jpg" alt="">
+									</div>
+									<figcaption class="product-description">
+										<p class="name">Feel tank</p>
+										<p class="price">&#036;59.95</p>
+										<button class="btn btn-orange btn-md btn-product-cart">
+									<span>Add to cart</span>
+									<span class="btn-add-ico icon-plus"></span>
+								</button>
+									</figcaption>
+								</figure>
+							</a>
+
+						</li>
+						<li class="mob-hidden">
+							<a class="product-item" href="">
+								<figure class="product-item-preview sale-mark">
+									<div class="img-wrap">
+										<img src="images/models/model-9.jpg" alt="">
+									</div>
+									<figcaption class="product-description">
+										<p class="name">Mimosa Lace dress</p>
+										<p class="price">&#036;76.95</p>
+										<button class="btn btn-orange btn-md btn-product-cart">
+									<span>Add to cart</span>
+									<span class="btn-add-ico icon-plus"></span>
+								</button>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li class="mob-hidden">
+							<a class="product-item" href="">
+								<figure class="product-item-preview">
+									<div class="img-wrap">
+										<img src="images/models/model-8.jpg" alt="">
+									</div>
+									<figcaption class="product-description">
+										<p class="name">Feel tank</p>
+										<p class="price">&#036;59.95</p>
+										<button class="btn btn-orange btn-md btn-product-cart">
+									<span>Add to cart</span>
+									<span class="btn-add-ico icon-plus"></span>
+								</button>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li class="mob-hidden">
+							<a class="product-item" href="">
+								<figure class="product-item-preview">
+									<div class="img-wrap">
+										<img src="images/models/model-10.jpg" alt="">
+									</div>
+									<figcaption class="product-description">
+										<p class="name">Feel tank</p>
+										<p class="price">&#036;59.95</p>
+										<button class="btn btn-orange btn-md btn-product-cart">
+									<span>Add to cart</span>
+									<span class="btn-add-ico icon-plus"></span>
+								</button>
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+					</ul>
+					<div class="button-box">
+						<button class="btn btn-more btn-md">
+							<span>Load More</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="brands">
+				<div class="brands-wrap">
+					<div class="title-brands">
+						<h2>Favourite brands</h2>
+					</div>
+					<div class="container">
+						<ul class="brands-list">
+							<li>
+								<a href=""><img src="images/brands/brand-1.jpg" alt=""></a>
+							</li>
+							<li>
+								<a href=""><img src="images/brands/brand-2.jpg" alt=""></a>
+							</li>
+							<li>
+								<a href=""><img src="images/brands/brand-3.jpg" alt=""></a>
+							</li>
+							<li>
+								<a href=""><img src="images/brands/brand-4.jpg" alt=""></a>
+							</li>
+							<li>
+								<a href=""><img src="images/brands/brand-5.jpg" alt=""></a>
+							</li>
+							<li>
+								<a href=""><img src="images/brands/brand-6.jpg" alt=""></a>
+							</li>
+							<li class="tablet-hidden">
+								<a href=""><img src="images/brands/brand-7.jpg" alt=""></a>
+							</li>
+							<li class="tablet-hidden">
+								<a href=""><img src="images/brands/brand-8.jpg" alt=""></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about-info">
+					<div class="container">
+						<h2 class="title-about">About LookShop</h2>
+						<p class="text-about">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+							quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+							cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non
+							mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+							per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="pay-sistems">
+				<p class="pay-label">We accept</p>
+				<ul class="pay-sistems-list">
+					<li class="pay-item pay-1">
+						<a href=""></a>
+					</li>
+					<li class="pay-item pay-2">
+						<a href=""></a>
+					</li>
+					<li class="pay-item pay-3">
+						<a href=""></a>
+					</li>
+					<li class="pay-item pay-4">
+						<a href=""></a>
+					</li>
+					<li class="pay-item pay-5">
+						<a href=""></a>
+					</li>
+					<li class="pay-item pay-6">
+						<a href=""></a>
+					</li>
+					<li class="pay-item pay-7">
+						<a href=""></a>
+					</li>
+					<li class="pay-item pay-8">
+						<a href=""></a>
+					</li>
+					<li class="pay-item pay-9">
+						<a href=""></a>
+					</li>
+					<li class="pay-item pay-10">
+						<a href=""></a>
+					</li>
+					<li class="pay-item pay-11">
+						<a href=""></a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-navigation">
+				<div class="container">
+					<div class="footer-top-wrap">
+						<ul class="footer-nav-list">
+							<li class="footer-list-item">
+								<ul class="inner-footer-list">
+									<li class="title-point">
+										<h3>Customer Service</h3>
+									</li>
+									<li><a href="">Contact</a></li>
+									<li><a href="">FAQ</a></li>
+									<li><a href="">Terms of payment</a></li>
+									<li><a href="">Terms of sale</a></li>
+									<li><a href="">Delivery terms and conditions</a></li>
+									<li><a href="">Returns and Refunds</a></li>
+								</ul>
+							</li>
+							<li class="footer-list-item">
+								<ul class="inner-footer-list">
+									<li class="title-point">
+										<h3>Information</h3>
+									</li>
+									<li><a href="">Affiliate</a></li>
+									<li><a href="">Cookies</a></li>
+									<li><a href="">How to Shop</a></li>
+									<li><a href="">About Nelly</a></li>
+									<li><a href="">Investor relations</a></li>
+								</ul>
+							</li>
+							<li class="footer-list-item">
+								<ul class="inner-footer-list">
+									<li class="title-point">
+										<h3>Campaigns</h3>
+									</li>
+									<li><a href="">Evening dresses</a></li>
+									<li><a href="">Makeup</a></li>
+									<li><a href="">Fashion forward</a></li>
+									<li><a href="">Training clothes</a></li>
+									<li><a href="">Special Occasion Dresses</a></li>
+								</ul>
+							</li>
+							<li class="footer-list-item">
+								<ul class="inner-footer-list">
+									<li class="title-point">
+										<h3>Stores</h3>
+									</li>
+									<li><a href="">Paris</a></li>
+									<li><a href="">New York</a></li>
+									<li><a href="">London</a></li>
+									<li><a href="">Madrid</a></li>
+									<li><a href="">Tokio</a></li>
+								</ul>
+							</li>
+							<li class="footer-list-item social-links">
+								<ul class="inner-footer-list">
+									<li class="title-point">
+										<h3>Social</h3>
+									</li>
+									<li class="footer-social">
+										<ul class="footer-social-list">
+											<li>
+												<a href="" class="icon-twitter-new"></a>
+											</li>
+											<li>
+												<a href="" class="icon-pinterest"></a>
+											</li>
+											<li>
+												<a href="" class="icon-facebook"></a>
+											</li>
+											<li>
+												<a href="" class="icon-google"></a>
+											</li>
+											<li>
+												<a href="" class="icon-twitter"></a>
+											</li>
+											<li>
+												<a href="" class="icon-vimeo"></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="secured-mark">
+							<img src="images/secured.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="disclaimer">
+						<button class="mob-nav-btn">
+							<span class="mob-nav-ico icon-menu"></span>
+						</button>
+						<ul class="nav-links">
+							<li><a href="">Privacy 	&#038; Cookies</a></li>
+							<li><a href="">Terms &#038; Conditions</a></li>
+							<li><a href="">Accessibility </a></li>
+							<li><a href="">Store Directory</a></li>
+							<li><a href="">About Us</a></li>
+						</ul>
+						<div class="copyright">
+							<p>&#169; LookShop.com</p>
+							<p>All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
