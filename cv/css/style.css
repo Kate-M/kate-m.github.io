@@ -15,7 +15,7 @@ content,aside,main,header,section,figure
 }
 body
 {
-	background:#fff url('../img/patt2.png');
+	background: #dfe5ec;
 	height: 100%;
 }
 .wrap
@@ -132,7 +132,7 @@ content li
 }
 .big-box
 {
-	height:670px;
+	height:760px;
 	
 }
 .box-info:nth-child(2n+2)
@@ -274,7 +274,7 @@ section
 	width:33.3333%;
 	padding: 7.5px;
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
     justify-content: flex-end;
 }
 .portfolio-item a .portfolio-text {
@@ -352,4 +352,25 @@ section
 .portfolio-text {
 	text-align: center;
 	font-size: 16px;
+}
+@media only screen and (max-width:1280px) {
+	.big-box {
+		height: 860px;
+	}
+}
+@media only screen and (max-width:992px) {
+	.big-box,.box-info {
+		height:auto;
+	}
+	.portfolio-text {
+		font-size: 14px;
+	}
+	.portfolio-item {
+		width:50%;
+	}
+}
+@media only screen and (max-width:600px) {
+	.portfolio-item {
+		width:100%;
+	}
 }
