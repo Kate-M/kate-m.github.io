@@ -7,7 +7,7 @@ html,body,header,h1,h2,figure,img, content,aside,main,ul,li,a
 	text-decoration:none;
 	border:none;
 	word-wrap: break-word;
-}
+	font-family: Roboto; 
 }
 content,aside,main,header,section,figure
 {
@@ -23,6 +23,12 @@ body
 	width:70%;
 	margin:0 auto;	
 	height: 100%;
+}
+.content {
+	display: flex;
+	flex-wrap:wrap;
+	background: #fff;
+	padding: 15px;
 }
 /*********************Header****************************/
 header
@@ -121,7 +127,7 @@ content li
 
 .box-info
 {
-	height:500px;
+	height:385px;
 	
 }
 .big-box
@@ -132,7 +138,6 @@ content li
 .box-info:nth-child(2n+2)
 {
 	margin-bottom:0;
-	margin-bottom:115px;
 }
 .box-info img
  {
@@ -142,7 +147,6 @@ content li
  /*********************Aside****************************/
 aside
 {
-	float:left;
 	width: 40%;
 	border-right: 8px solid #3D6F7C;
 }
@@ -150,6 +154,7 @@ aside
 aside .box-info li
 {
 	width: 100%;
+	padding-bottom: 10px;
 }
 
 aside .box-info a
@@ -204,8 +209,7 @@ aside .box-info .social-git:hover
 main
 {
 	margin-left:50px;
-	float:left;
-	width: 47%;
+	width: 52%;
 }
 main .box-info li::before
 {
@@ -216,15 +220,7 @@ main .box-info li::before
 section
 {
 	text-align:justify;
-	float:left
-}
-.personal h3:hover::after
-{
-content:' Хочу любимую работу!:)';
-}
-.personal_en h3:hover::after
-{
-content:' I want to love my job!:)';
+	width:100%;
 }
 
 @font-face {
@@ -241,13 +237,13 @@ content:' I want to love my job!:)';
 	{
 		font-size:80%;
 	}
-	content
+	.content
 	{
 		min-width:320px;
+		flex-direction: column;
 	}
 	aside,main
 	{
-		float:none;
 		border:none;
 		width: 100%;
 		margin:0;
@@ -267,4 +263,93 @@ content:' I want to love my job!:)';
 	.wrap {
 		width:100%;
 	}
+}
+
+.portfolio-list {
+	display: flex;
+	margin: 15 -15px;
+	flex-wrap:wrap;
+}
+.portfolio-item {
+	width:33.3333%;
+	padding: 7.5px;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.portfolio-item a .portfolio-text {
+	color:lightseagreen;
+	transition: all .3s;
+}
+.portfolio-item a:hover .portfolio-text {
+	color:seagreen;
+	transition: all .3s;
+}
+.img-wrap {
+	overflow: hidden;
+	width: 100%;
+	height: 200px;
+	transition: all .3s;
+}
+.portfolio-item a:hover .img-wrap {
+	transition: all .3s;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5)
+}
+
+.proj1 {
+	background:url(../img/project1.png);
+}
+.proj2 {
+	background:url(../img/project2.png);
+}
+.proj3 {
+	background:url(../img/project3.png);
+}
+.proj4 {
+	background:url(../img/project4.png);
+}
+.proj5 {
+	background:url(../img/project5.png);
+}
+.proj6 {
+	background:url(../img/project6.png);
+}
+.proj7 {
+	background:url(../img/project7.png);
+}
+.proj8 {
+	background:url(../img/project8.png);
+}
+.proj9 {
+	background:url(../img/project9.png);
+}
+.proj10 {
+	background:url(../img/project10.png);
+}
+.proj11 {
+	background:url(../img/project11.png);
+}
+.proj12 {
+	background:url(../img/project12.png);
+}
+.proj13 {
+	background:url(../img/project13.png);
+}
+.proj14 {
+	background:url(../img/project14.png);
+}
+.proj15 {
+	background:url(../img/project15.png);
+}
+.proj16 {
+	background:url(../img/project16.png);
+}
+.proj {
+	
+	background-position:top center;
+	height: 100%;
+}
+.portfolio-text {
+	text-align: center;
+	font-size: 16px;
 }
