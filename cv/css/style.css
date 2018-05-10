@@ -344,10 +344,20 @@ section
 .proj16 {
 	background:url(../img/project16.png);
 }
+.proj17 {
+	background:url(../img/project17.png);
+}
+.proj18 {
+	background:url(../img/project18.png);
+}
+.proj-def {
+	background:url(../img/proj-def.png);
+}
 .proj {
 	
 	background-position:top center;
 	height: 100%;
+	background-size: cover;
 }
 .portfolio-text {
 	text-align: center;
