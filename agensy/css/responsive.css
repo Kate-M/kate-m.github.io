@@ -1,0 +1,205 @@
+@media (max-width: 1200px) {
+  .h-line::before {
+    --width-line: 200px;
+  }
+}
+@media (max-width: 1024px) {
+    .mouse-scroll {
+        margin-top: -90px;
+    }
+    .h-line::before {
+        --width-line: 120px;
+    }  
+}
+@media (max-width: 1023px) {
+    section:not(.contact) {
+        margin-bottom: 50px;
+    }
+    .title {
+        margin-bottom: 30px;
+    }  
+    .services-item {
+        padding-bottom: 15px;
+    }
+    .services-img {
+        margin: 20px 0;
+    }
+    .studies-list {
+        margin-bottom: 20px;
+    }
+    .studies-list .inner-item:last-child {
+        padding-top: 20px;
+    }
+    .button-area {
+        margin-top: 30px;
+    }  
+    .inner-item {
+        margin-bottom: 50px;
+    }
+    .about-area .inner-img img {
+        height: 100%;
+    }
+    .contact {
+        padding: 50px 0;
+    }       
+}
+@media (max-width: 991px) {
+  .mouse-scroll {
+        display: none;
+  }  
+  .button-view {
+    position: static;
+    margin: 30px 0 0;
+    padding: 60px;
+    text-align: center;
+  }
+  .benefits .inner-img {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+    .img-wrap {
+        text-align: center;
+    }
+    .h-line::before {
+        --width-line: 100px;
+    }
+    .agency-image figure {
+        height: 100%;
+        overflow: hidden;
+    }
+    .agency-image figure img {
+        margin-left: -70%;
+    }
+
+    .form-inline .form-control, .form-inline .form-but {
+        max-width: 300px;
+    }      
+}
+@media (max-width: 767px) {
+    .f-adapt {
+        display: block;
+    }
+    .flex-container {
+        width: 100%;
+    }    
+    .button-group .btn:first-child {
+        margin-right: 10px;
+    }
+    .title-text {
+        width: 100%;
+    }
+    .agency-text .slide-title {
+        font-size: 2.5rem;
+    }
+    .agency-text p.slide-text {
+        padding: 20px 0;
+    }
+    .services-list {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .portfolio-block {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .inner-item {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .main-page .inner-img {
+        text-align: center;
+    }
+    .about-area .inner-img {
+        display: none;
+    }
+    .benefits-list {
+        padding: 40px 15px;
+    }
+    .date-title::after {
+        width: 100%;
+    }
+    .post-content, .date-title {
+        padding-top: 30px;
+    }
+    .form-inline {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+@media (max-width: 375px) {
+  .button-group .btn:first-child {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 769px) {
+
+    .agency-image figure img {
+        max-width: 100%;
+        width: 100%;
+    }
+}    
+@media (min-width: 768px) {
+    img {
+        max-width: 100%;
+    }
+    .agency-image figure img {
+        max-width: initial;
+    }
+    .agency-slider .slick-dots {
+        margin-left: 335px;
+    }
+    .main-page .inner-item:nth-child(even) {
+        -webkit-flex-direction: row-reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+    }
+    .about-area .inner-text h2 {
+        text-align: right;
+    }
+    .about-area .inner-text .h-line::before {
+        left: 20px;
+        margin-left: 0;
+    }    
+}
+@media (min-width: 992px) {
+    .agency-slider .slick-dots {
+        margin-left: 440px;
+    }
+    .agency-text p.slide-text {
+        margin-right: 235px;
+    }
+    .main-page .big-title {
+        margin-top: 60px;
+    }
+    .footer-nav-list {
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }   
+}
+@media (min-width: 1024px) {
+  .main-page .inner-img img {
+    height: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .agency-slider .slick-dots {
+    margin-left: 555px;
+  }
+}
+@media (min-width: 1440px) {
+  .benefits-list {
+    padding-right: 180px;
+  }
+}

@@ -1,0 +1,139 @@
+/* Modal
+=================================*/
+.modal-button {
+  margin: 17px 0;
+}
+
+.modal-form {
+  position: absolute;
+  top: -1000%;
+  padding: 0;
+  background: #050505;
+  padding: 65px 10px;
+  z-index: 10;
+}
+@media (min-width: 500px) {
+  .modal-form {
+    padding: 65px 90px;
+    left: 50%;
+    margin-left: -240px;
+  }
+}
+@media (min-width: 768px) {
+  .modal-form {
+    padding: 65px;
+    margin-left: -365px;
+  }
+}
+@media (min-width: 1024px) {
+  .modal-form {
+    padding: 80px 130px;
+    margin-left: -465px;
+  }
+}
+@media (min-width: 1440px) {
+  .modal-form {
+    padding: 110px 130px;
+  }
+}
+.modal-form .button-close {
+  width: 15px;
+  color: #ffffff;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.modal-form .button-close:hover {
+  color: #dc0a0a;
+}
+.modal-form .form-control {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  border-color: #212020;
+}
+.modal-form .form-inline .form-group {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.modal-form .form-inline textarea.form-control {
+  min-height: 70px;
+}
+.modal-form .button-area {
+  margin: 35px 0;
+}
+@media (min-width: 768px) {
+  .modal-form .button-area {
+    margin-bottom: 0;
+  }
+}
+.modal-form .link-ico {
+  font-size: 2.8125rem;
+  color: #ffffff;
+}
+.modal-form .inner-footer-list {
+  padding-top: 15px;
+}
+.modal-form .social a {
+  margin: 0 15px;
+}
+.modal-form .social a:hover {
+  color: #dc0a0a;
+}
+
+.open-modal {
+  top: 50px;
+  -webkit-animation: fadeInDown .5s both;
+          animation: fadeInDown .5s both;
+}
+@media (min-width: 992px) {
+  .open-modal {
+    top: 79px;
+  }
+}
+
+.wrap-modal {
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 500px) {
+  .wrap-modal {
+    width: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .wrap-modal {
+    width: 600px;
+  }
+}
+@media (min-width: 1024px) {
+  .wrap-modal {
+    width: 670px;
+  }
+}
+
+.modal-title {
+  font-size: 1.5625rem;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .modal-title {
+    margin-bottom: 30px;
+  }
+}
+
+.link-area {
+  border: 1px solid #212020;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 40px;
+  margin-bottom: 40px;
+}
+
+.link-title {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+}

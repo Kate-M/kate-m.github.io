@@ -1,0 +1,19 @@
+/* Contact page 
+=================================*/
+.margin-20 {
+  margin: 20px 0;
+}
+.contact-page-area strong {
+  font-size: 2.5rem;
+}
+.inner-address {
+  margin: 30px 0;
+}
+.inner-address .page-form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}

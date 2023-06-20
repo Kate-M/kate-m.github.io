@@ -1,0 +1,113 @@
+/* Portfolio page
+=================================*/
+.main-portfolio .holder {
+  margin: 15px 0 30px 0;
+  text-align: center;
+}
+.main-portfolio .holder a {
+  font-family: OpenSansRegular;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin: 0 25px 0 0;
+  color: #202020;
+  border-bottom: 1px solid transparent;
+}
+.main-portfolio .holder a:hover,
+.main-portfolio .holder a:focus,
+.main-portfolio .holder a:active {
+  color: #dc0a0a !important;
+}
+.main-portfolio .holder a.jp-current {
+  color: #dc0a0a;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #dc0a0a;
+}
+.main-portfolio .holder a.jp-current:hover {
+  cursor: default;
+}
+.main-portfolio .portfolio-thumbs {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.main-portfolio .portfolio-img {
+  margin-top: 30px;
+  text-align: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-portfolio .portfolio-img figure {
+  position: relative;
+  display: inline-block;
+}
+.main-portfolio .portfolio-img figure::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+.main-portfolio .portfolio-img figure:hover .btn {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  transition: -webkit-transform .35s;
+  transition: transform .35s;
+  transition: transform .35s, -webkit-transform .35s;
+}
+.main-portfolio .portfolio-img figure:hover::after {
+  content: '';
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+/*.main-portfolio .portfolio-img img {
+  height: 100%;
+}*/
+.main-portfolio .portfolio-img .btn {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  position: absolute;
+  z-index: 2;
+  transition: -webkit-transform .35s;
+  transition: transform .35s;
+  transition: transform .35s, -webkit-transform .35s;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -90px;
+}
+@media (max-width: 767px) {
+  .main-portfolio .portfolio-img figure img {
+    max-width: 100%;
+  }
+  .main-portfolio .holder {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }  
+  .main-portfolio .holder a {
+    line-height: 2;
+  }
+}

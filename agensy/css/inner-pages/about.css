@@ -1,0 +1,108 @@
+/* About page
+=================================*/
+.about-us .inner-text {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about-page .mono-back {
+  padding: 120px 0;
+  background: #e8e8e8;
+}
+.about-page .about-section {
+  margin-bottom: 0;
+}
+.about-ico {
+  display: block;
+  font-size: 3.75rem;
+  color: #dc0a0a;
+  margin-bottom: 50px;
+}
+.team-block {
+  padding: 80px 0;
+}
+
+.team {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.team-item {
+  display: inline-block;
+  padding: 60px 45px;
+  border: 1px solid #ccc;
+  width: 305px;
+}
+.team-item:hover {
+  border-color: #dc0a0a;
+}
+.team-item figcaption {
+  padding-top: 40px;
+}
+
+.team-photo {
+  border-radius: 50%;
+}
+
+.team-title {
+  font-size: 1.4375rem;
+  margin-bottom: 10px;
+}
+
+.big-num {
+  font-size: 1.875rem;
+}
+/*responsive*/
+@media (max-width: 1023px) {
+  .about-page .mono-back {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 767px) {
+  .about-us .inner-text {
+    padding-top: 30px;
+  }
+  .about-value-list li:not(:last-child) {
+    margin-bottom: 35px;
+  }
+  .about-us .img-wrap img {
+    width: 100%;
+  }
+  .about-ico {
+    margin-bottom: 20px;
+  }
+  .team-item {
+    width: 290px;
+  }
+  .team-item:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
+@media (min-width: 768px) {
+  .team {
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .team-item {
+    padding: 40px 30px;
+    width: 230px;
+  }
+}
