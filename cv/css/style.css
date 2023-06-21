@@ -1,5 +1,4 @@
-html,body,header,h1,h2,figure,img, content,aside,main,ul,li,a
-{
+html,body,header,h1,h2,figure,img, content,aside,main,ul,li,a {
 	margin: 0;
 	padding: 0;
 	box-sizing:border-box;
@@ -9,17 +8,14 @@ html,body,header,h1,h2,figure,img, content,aside,main,ul,li,a
 	word-wrap: break-word;
 	font-family: Roboto; 
 }
-content,aside,main,header,section,figure
-{
+content,aside,main,header,section,figure {
 	display:block;
 }
-body
-{
+body {
 	background: #dfe5ec;
 	height: 100%;
 }
-.wrap
-{
+.wrap {
 	width:70%;
 	margin:0 auto;	
 	height: 100%;
@@ -31,49 +27,36 @@ body
 	padding: 15px;
 }
 /*********************Header****************************/
-header
-{   
+header {   
     position:relative;
 	background-color: #3d6f7c;
 	width: 100%;
 	margin: 20px auto;
 	border-radius:5px;
 	padding:5px 60px;
-	
-	
 }
-
-header figure
-{
+header figure {
 	float:right;
-	
 }
-header figure img
-{
+header figure img {
 	vertical-align:middle;
 }
-
-
-.clearfix
-{
+.clearfix {
 	content: "";
     display: table;
     clear: both;
 }
 /*********************Content****************************/
-.name
-{
+.name {
 	float:left;
 }
-h1
-{    
+h1 {    
 	font: 2.25em/1.75em Tahoma,sans-serif;
 	color: rgb(255,255,255);
 	display:block;
 	width:200px;
 }
-h2
-{   
+h2 {   
     display:block;
 	font: 1em/1.25em Tahoma,sans-serif;
 	color:rgb(161,176,180);
@@ -82,137 +65,101 @@ h2
 	padding-top:15px;
 	
 }
-.lang_button
-{
+h3 {
+	text-decoration: underline;
+}
+.lang_button {
 	position:absolute;
 	right:0;
 	margin-right:20px;
 }
-.lang_button a
-{
+.lang_button a {
 	color:#FFFFFF;
 }
-.lang_button a:hover
-{
+.lang_button a:hover {
 	color:#A1B0B4;
 }
- content 
- {
+content {
 	background-color: rgb(255,255,255);
 	margin: 0 auto;
 	padding:5px 50px;
 	border:1px solid #3D6F7C;
 	border-radius:5px;
 	width: 100%;
- }
- 
- content h3
-{
+}
+content h3 {
 	font:bold 1em/1.25em Arial,sans-serif;
 	color:rgb(61,111,124);
 	margin:30px 0;
 }
 content p,
-content li
-{   
+content li {   
     font:bold 0.875em Roboto,sans-serif;
 	line-height:1.5;
 }
-
-content li
-{
+content li {
 	margin:10px 0;
-	
 }
-
-.box-info
-{
-	height:385px;
-	
-}
-.big-box
-{
-	height:760px;
-	
-}
-.box-info:nth-child(2n+2)
-{
+.box-info:nth-child(2n+2) {
 	margin-bottom:0;
 }
-.box-info img
- {
+.box-info img {
 	width: 35px;
 	height: 35px;
- }
- /*********************Aside****************************/
-aside
-{
+}
+/*********************Aside****************************/
+aside {
 	width: 40%;
+	padding-right: 10px;
 	border-right: 8px solid #3D6F7C;
 }
-
-aside .box-info li
-{
+aside .box-info li {
 	width: 100%;
 	padding-bottom: 10px;
 }
-
-aside .box-info a
-{
+aside .box-info a {
     display:block;
 	background:url(../img/social.png) no-repeat;	
     padding:15px 0;
     width:35px;
     height:35px;
 }
-aside .box-info a p
-{  
-   
+aside .box-info a p {  
    margin:0 50px;
    width: 156px;
    color: #000000;
 }
-aside .box-info a p:hover
-{  
+aside .box-info a p:hover {  
   color:#3D6F7C;
   margin-top:1px;
 }
-aside .box-info .social-facebook:hover
-{
+aside .box-info .social-facebook:hover {
     background-position: -35px 0;
 }
-aside .box-info .social-skype
-{
+aside .box-info .social-skype {
     background-position:  0 -35px;
 }
-aside .box-info .social-skype:hover
-{
+aside .box-info .social-skype:hover {
     background-position: -35px -35px;
 }
-aside .box-info .social-linked
-{
+aside .box-info .social-linked {
     background-position:  0 -70px;
 }
-aside .box-info .social-linked:hover
-{
+aside .box-info .social-linked:hover {
     background-position: -35px -70px;
 }
-aside .box-info .social-git
-{
+aside .box-info .social-git {
     background-position:  0 -105px;
 }
-aside .box-info .social-git:hover
-{
+aside .box-info .social-git:hover {
     background-position: -35px -105px;
 }
 /*********************Main****************************/
-main
-{
+main {
 	margin-left:50px;
 	width: 52%;
 }
-main .box-info li::before
-{
+main .box-info li::before {
     content: '-';
     margin-right: 0.5em;
 }
@@ -227,11 +174,10 @@ section
     font-family: Roboto; 
     src: url('../fonts/Roboto.ttf'); 
     
-   }
+}
 /*****************max-width:767px************************/
 
-@media only screen and (max-width:767px)
-{
+@media only screen and (max-width:767px) {
 	
 	header
 	{
@@ -296,59 +242,53 @@ section
 	box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5)
 }
 
-.proj1 {
-	background:url(../img/project1.png);
+.proj_exl {
+	background:url(../img/project-exl.png);
 }
-.proj2 {
-	background:url(../img/project2.png);
+.proj_dance {
+	background:url(../img/project-dance.png);
 }
-.proj3 {
-	background:url(../img/project3.png);
+.proj_trade {
+	background:url(../img/project-trade.png);
 }
-.proj4 {
-	background:url(../img/project4.png);
+.proj_trampoline {
+	background:url(../img/project-trampoline.png);
 }
-.proj5 {
-	background:url(../img/project5.png);
+.proj_hubdsp {
+	background:url(../img/project-hubdsp.png);
 }
-.proj6 {
-	background:url(../img/project6.png);
+.proj_open {
+	background:url(../img/project-open.png);
 }
-.proj7 {
-	background:url(../img/project7.png);
+.proj_bytespace {
+	background:url(../img/project-bytespace.png);
 }
-.proj8 {
-	background:url(../img/project8.png);
+.proj_look {
+	background:url(../img/project-look.png);
 }
-.proj9 {
-	background:url(../img/project9.png);
+.proj_agency {
+	background:url(../img/project-agency.png);
 }
-.proj10 {
-	background:url(../img/project10.png);
+.proj_saccon {
+	background:url(../img/project-saccon.png);
 }
-.proj11 {
-	background:url(../img/project11.png);
+.proj_main_game {
+	background:url(../img/project-main-game.png);
 }
-.proj12 {
-	background:url(../img/project12.png);
+.proj_fur {
+	background:url(../img/project-fur.png);
 }
-.proj13 {
-	background:url(../img/project13.png);
+.proj_game {
+	background:url(../img/project-game.png);
 }
-.proj14 {
-	background:url(../img/project14.png);
+.proj_golden {
+	background:url(../img/project-golden.png);
 }
-.proj15 {
-	background:url(../img/project15.png);
+.proj_sport {
+	background:url(../img/project-sport.png);
 }
-.proj16 {
-	background:url(../img/project16.png);
-}
-.proj17 {
-	background:url(../img/project17.png);
-}
-.proj18 {
-	background:url(../img/project18.png);
+.proj_todo {
+	background:url(../img/project-todo.png);
 }
 .proj-def {
 	background:url(../img/proj-def.png);
@@ -363,13 +303,8 @@ section
 	text-align: center;
 	font-size: 16px;
 }
-@media only screen and (max-width:1280px) {
-	.big-box {
-		height: 860px;
-	}
-}
 @media only screen and (max-width:992px) {
-	.big-box,.box-info {
+	.box-info {
 		height:auto;
 	}
 	.portfolio-text {
